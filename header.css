@@ -1,0 +1,148 @@
+
+::-webkit-scrollbar-thumb {
+    background: rgb(200, 2, 2);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #505050;
+ 
+}
+
+
+#menu{
+    display: none;
+    width:50px;
+    height: 50px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    z-index: +2;
+}
+
+.header{
+    width:100%;
+    height:10vh;
+    background-color: rgb(0, 0, 0);
+    
+}
+
+.header ul{
+    width:65%;
+    
+    float: right;
+    list-style-type: none;
+    
+}
+
+.header ul li a{
+    float: left;
+    margin-left: 15px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 20px;
+    opacity: .7;
+    
+}
+
+.header ul li a:hover{
+    opacity: .5;
+    color: #b10000f5;
+}
+
+@media only screen and (min-width:320px) and (max-width:420px){
+    #menu{
+        display: block;
+        
+    }
+    .header{
+   
+       height: 37vh;
+       background-color: rgb(0, 0, 0);
+    }
+    .header ul{
+        
+        width: 100%;
+    }
+    .main .header img{
+        width: 100%;
+
+    }
+    .header ul li a{
+        width:100%;
+        text-align: center;
+        margin-left:0px;
+        margin-bottom: 7px;
+    }
+}
+
+
+
+
+
+@media only screen and (min-width:420px) and (max-width:655px){
+    #menu{
+        display: block;
+    }
+    .header{
+    width: 100%;
+       height: 40vh;
+       background-color: rgb(0, 0, 0);
+    }
+    .header ul{
+        height: 30vh;
+        width: 100%;
+    }
+    .header ul li a{
+        width:100%;
+        text-align: center;
+        margin-left:0px;
+        margin-bottom: 7px;
+    }
+}
+
+
+
+@media only screen and (min-width:655px) and (max-width:800px){
+    #menu{
+        display: block;
+    }
+    .header{
+        width: 100%;
+           height: 10vh;
+           background-color: rgb(0, 0, 0);
+           
+        }
+    .header ul{
+        width: 70%;
+        text-align: center;
+    }
+ 
+
+}
+
+@media only screen and (min-width:800px) and (max-width:1200px){
+    #menu{
+        display: block;
+    }
+    .header{
+        width: 100%;
+           height: 5vh;
+           background-color: rgb(0, 0, 0);
+           
+        }
+        
+    .header ul{
+        width: 70%;
+        text-align: center;
+    }
+ 
+}
